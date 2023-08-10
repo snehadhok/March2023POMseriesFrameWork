@@ -33,3 +33,49 @@ pipeline{
                 echo("deploy to QA")
             }
         }
+        
+        stage("Run regression test cases on QA"){
+            steps{
+                echo("Run test cases on QA")
+            }
+        }
+        
+        stage("Deploy to stage"){
+            steps{
+                echo("deploy to stage")
+            }
+        }
+        
+         stage("Run sanity test cases on QA"){
+            steps{
+                echo("Run sanity test cases on QA")
+            }
+        }
+
+
+        stage("Deploy to UAT"){
+            steps{
+                echo("deploy to UAT")
+            }
+        }
+        
+         stage("Run sanity test cases on UAT"){
+            steps{
+                echo("Run sanity test cases on UAT")
+            }
+        }
+
+
+        
+        stage("Deploy to PROD"){
+            steps{
+                echo("deploy to PROD")
+            }
+        }
+        
+        
+        
+    }
+    
+    
+}
