@@ -85,7 +85,6 @@ pipeline
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/snehadhok/March2023POMseriesFrameWork.git'    
                     bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
-                    src\test\resources\testrunners\testng_sanity.xml
                 }
             }
         }
